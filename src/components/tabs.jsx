@@ -44,7 +44,7 @@ function Tabs() {
 
   const recuperaTab = () => {
     sendRequest
-      .get("/ajax/tab" + tab_id + ".json")
+      .get("ajax/tab" + tab_id + ".json")
       .then((res) => setTabAttiva(res.data.item.content));
   };
 
